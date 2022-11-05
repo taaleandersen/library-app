@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background: #1d1d1d;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  gap: 20px;
+}
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  height: 6vh;
+  border: 2px solid #ccc;
+  padding: 14px;
+}
+.content-main {
+  height: 60vh;
+  border: 1px solid #ccc;
+}
+.settings {
+  display: flex;
+  height: 6vh;
+  border-bottom: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+}
+.settings button {
+  height: 32px;
+  width: 96px;
+}
