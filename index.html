@@ -5,14 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Library</title>
   </head>
   <body>
     <div class="content-container">
       <div class="header">Library app</div>
       <div class="content-main">
-        <div class="settings"><button>Add book</button></div>
+        <div class="settings">
+          <button id="btnAddBook">Add book</button>
+          <div id="settings-form" style="display: none">
+            <form>
+              <input
+                type="text"
+                name="inputfield"
+                id="bookName"
+                placeholder="Bookname"
+              />
+              <input
+                type="text"
+                name="inputfield"
+                id="bookAuthor"
+                placeholder="Author"
+              />
+              <input
+                type="text"
+                name="inputfield"
+                id="bookPages"
+                placeholder="Number of pages"
+              />
+              <button id="submitBook">Submit book</button>
+            </form>
+          </div>
+        </div>
+        <div class="book-container"></div>
       </div>
     </div>
   </body>
